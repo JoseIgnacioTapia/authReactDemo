@@ -2,13 +2,6 @@ import { useState, createContext } from 'react';
 
 export const AuthContext = createContext();
 
-const initialAuth = {
-  token: '',
-  isLoggedIn: false,
-  login: token => {},
-  logout: () => {},
-};
-
 const AuthContextProvider = ({ children }) => {
   const [token, setToken] = useState(null);
 
